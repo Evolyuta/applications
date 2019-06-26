@@ -62,5 +62,6 @@ if (!count($clients)) {
 
     ?>
 </table>
+<?="<a href='index.php'>Вернуться к администрированию";?>
 </body>
 </html>
