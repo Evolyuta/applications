@@ -5,7 +5,6 @@
     <meta charset="utf-8">
 </head>
 <body>
-<h1>Администрирование магазина</h1>
 <h3>Доступные действия:</h3>
 <ul>
     <li><a href='applicationsList.php'>Просмотр заявок</a></li>
