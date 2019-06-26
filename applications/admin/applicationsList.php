@@ -33,11 +33,9 @@ if (!count($clients)) {
         <th>Телефон</th>
         <th>E-mail</th>
         <th>Дата и время</th>
-        <th>Посмотреть</th>
-        <th>Редактировать</th>
+        <th>Посмотреть и редактировать</th>
     </tr>
     <?php
-
     if ($_POST['name']) $isName = 1;
     if ($_POST['address']) $isAddress = 1;
 
@@ -53,10 +51,9 @@ if (!count($clients)) {
                 <td><?= $client['phone'] ?></td>
                 <td><?= $client['email'] ?></td>
                 <td><?= date("d-m-Y H:i:s", $client['datetime']) ?></td>
-                <td><a href="show.php?id=<?=
-                    $client['id'] ?>">Посмотреть</td>
-                <td><a href="edit.php?id=<?=
-                    $client['id'] ?>">Редактировать</td>
+                <td><a href="showAndEdit.php?id="<?=
+                    $client['id'] ?>">Посмотреть и редактировать
+                </td>
             </tr>
             <?
         }

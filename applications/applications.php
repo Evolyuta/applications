@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <br/>
 
-    <input type="submit" name="send" value="Отправить!"/>
+    <input type="submit" name="send" value="Отправить"/>
 
 </form>
 
