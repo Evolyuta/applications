@@ -19,3 +19,13 @@ function addItemToList($name, $address, $phone, $email, $msg, $date)
     return true;
 }
 
+function selectItems()
+{
+    global $link;
+    $sql = 'SELECT id, name, datetime FROM applications';
+
+    if (!$result = mysqli_query($link, $sql)) return false;
+    $items = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    mysqli_free_result($result);
+    return $items;
+}
