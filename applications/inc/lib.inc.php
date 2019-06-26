@@ -22,7 +22,7 @@ function addItemToList($name, $address, $phone, $email, $msg, $date)
 function selectItems()
 {
     global $link;
-    $sql = 'SELECT id, name, datetime FROM applications';
+    $sql = 'SELECT id, name, address, phone, email, msg, datetime FROM applications';
 
     if (!$result = mysqli_query($link, $sql)) return false;
     $items = mysqli_fetch_all($result, MYSQLI_ASSOC);
