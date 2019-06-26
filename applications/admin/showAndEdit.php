@@ -18,7 +18,7 @@ if ($id) {
     <p><b>Адрес</b>: <?= $client["address"] ?></p>
     <p><b>Телефон</b>:<?= $client["phone"] ?> </p>
     <p><b>Email</b>: <?= $client["email"] ?></p>
-    <p><b>Дата размещения заявки</b>: <?= date("d-m-Y H:i", $client["date"]) ?></p>
+    <p><b>Дата размещения заявки</b>: <?= date("d-m-Y H:i", $client["datetime"]) ?></p>
     <p><b>Сообщение от клиента</b>: <?= $client["msg"] ?></p>
     <?
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -27,7 +27,7 @@ if ($id) {
         if ($_POST['phone']) $phone = clearStr($_POST['phone']); else $phone = $client["phone"];
         if ($_POST['email']) $email = clearStr($_POST['email']); else $email = $client["email"];
         if ($_POST['msg']) $msg = clearStr($_POST['msg']); else $msg = $client["msg"];
-        $date = $client["date"];
+        $date = $client["datetime"];
         editItem($name, $address, $phone, $email, $msg, $date, $id);
 
         echo "Заявка изменена! <a href='applicationsList.php'>Вернуться к списку заявок";

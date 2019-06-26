@@ -29,6 +29,8 @@ include 'inc/headers.inc.php';
             </li>
             <li><a href='index.php?id=gbook'>Гостевая книга</a>
             </li>
+            <li><a href='applications/admin/index.php'>Администрирование</a>
+            </li>
         </ul>
     </div>
 </nav>
