@@ -8,7 +8,7 @@
 <h1>Администрирование магазина</h1>
 <h3>Доступные действия:</h3>
 <ul>
-    <li><a href='applicationsList.php'>Просмотр готовых заказов</a></li>
+    <li><a href='applicationsList.php'>Просмотр заявок</a></li>
 </ul>
 </body>
 </html>
