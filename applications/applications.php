@@ -29,4 +29,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="submit" name="send" value="Отправить"/>
 
 </form>
-
