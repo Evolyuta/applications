@@ -9,7 +9,7 @@ $email = clearStr($_POST['email']);
 $msg = clearStr($_POST['msg']);
 $date = time();
 
-addItemToCatalog($name, $address, $phone, $email, $msg, $date);
+addItemToList($name, $address, $phone, $email, $msg, $date);
 
 ?>
 

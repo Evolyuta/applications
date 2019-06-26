@@ -7,7 +7,7 @@ function clearStr($data)
     return mysqli_real_escape_string($link, $data);
 }
 
-function addItemToCatalog($name, $address, $phone, $email, $msg, $date)
+function addItemToList($name, $address, $phone, $email, $msg, $date)
 {
     global $link;
     $sql = 'INSERT INTO applications (name, address, phone, email, msg, datetime) VALUES (?,?,?,?,?,?)';
