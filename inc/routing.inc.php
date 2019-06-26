@@ -4,7 +4,7 @@ switch ($id) {
         include 'inc/contact.inc.php';
         break;
     case 'gbook':
-        include 'inc/gbook.inc.php';
+        include 'applications/applications.php';
         break;
     default:
         include 'inc/index.inc.php';
