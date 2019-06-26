@@ -29,3 +29,22 @@ function selectItems()
     mysqli_free_result($result);
     return $items;
 }
+
+function getItem($id)
+{
+    global $link;
+    $sql = "SELECT id, name, address, phone, email, msg, datetime FROM applications WHERE id = '$id'";
+
+    if (!$result = mysqli_query($link, $sql)) return false;
+    $items = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    mysqli_free_result($result);
+    return $items[0];
+}
+
+function editItem($name, $address, $phone, $email, $msg, $date, $id)
+{
+    global $link;
+    $sql = "UPDATE applications SET name='$name', address='$address', phone='$phone',email='$email',msg='$msg',datetime='$date' WHERE id='$id'";
+    mysqli_query($link, $sql);
+    return true;
+}
