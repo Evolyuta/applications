@@ -26,7 +26,7 @@ CREATE TABLE `applications` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL DEFAULT '',
   `address` varchar(255) NOT NULL DEFAULT '',
-  `phone` int(11) DEFAULT NULL,
+  `phone` varchar(255) NOT NULL DEFAULT '',
   `email` varchar(255) NOT NULL DEFAULT '',
   `msg` varchar(255) NOT NULL DEFAULT '',
   `datetime` int(11) DEFAULT NULL,
